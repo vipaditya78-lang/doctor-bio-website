@@ -1,0 +1,345 @@
+09.30 8:12 PM
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Executive medical practice, credentials portfolio, and live consultation booking for Dr. Julian Thorne, MD, PhD, FACS." />
+  <title>Dr. Julian Thorne | Cardiothoracic & Longevity Medicine</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #030712;
+      color: #f8fafc;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .bg-mesh-glow {
+      background-image:
+        radial-gradient(at 15% 15%, rgba(20, 184, 166, 0.15) 0px, transparent 45%),
+        radial-gradient(at 85% 10%, rgba(56, 189, 248, 0.1) 0px, transparent 45%),
+        radial-gradient(at 50% 60%, rgba(13, 148, 136, 0.08) 0px, transparent 60%);
+    }
+    .glass-nav {
+      background: rgba(8, 12, 22, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.42);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      background: rgba(30, 41, 59, 0.65);
+      border-color: rgba(45, 212, 191, 0.35);
+      box-shadow: 0 16px 40px -10px rgba(20, 184, 166, 0.16);
+    }
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+    }
+    .glass-input {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .glass-input:focus {
+      border-color: rgba(45, 212, 191, 0.6);
+      box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+    }
+    .glass-modal {
+      background: rgba(11, 17, 33, 0.94);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7);
+    }
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 bg-mesh-glow antialiased selection:bg-teal-500/30 selection:text-teal-200 min-h-screen">
+  <!-- TOP BAR NAVIGATION -->
+  <header class="sticky top-0 z-40 w-full glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Wordmark -->
+      <a href="#" class="text-xl sm:text-2xl font-bold tracking-tight text-white hover:text-teal-300 transition-colors flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-teal-400 shadow-[0_0_10px_rgba(45,212,191,0.8)]"></span>
+        <span>Dr. Julian Thorne, <span class="text-slate-400 font-normal text-lg">MD</span></span>
+      </a>
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-teal-300 transition-colors">Bio & Credentials</a>
+        <a href="#procedures" class="hover:text-teal-300 transition-colors">Procedures</a>
+        <a href="#outcomes" class="hover:text-teal-300 transition-colors">Clinical Proof</a>
+        <a href="#insurance" class="hover:text-teal-300 transition-colors">Insurance & Fees</a>
+        <a href="#facility" class="hover:text-teal-300 transition-colors">Practice Suite</a>
+        <a href="#faq" class="hover:text-teal-300 transition-colors">FAQ</a>
+      </nav>
+      <!-- Primary Actions -->
+      <div class="flex items-center gap-3">
+        <button onclick="openLookupModal()" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 text-xs font-medium text-slate-300 hover:text-white glass-pill hover:bg-white/10 rounded-lg transition-colors">
+          <span>Patient Portal</span>
+        </button>
+        <button onclick="openBookingModal()" class="inline-flex items-center gap-2 px-5 py-2.5 text-xs sm:text-sm font-semibold text-slate-950 bg-teal-400 hover:bg-teal-300 rounded-lg shadow-[0_0_20px_rgba(45,212,191,0.3)] transition-all">
+          <span>Book Consultation</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative pt-12 pb-20 md:py-24 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <!-- Proposition & Content -->
+          <div class="lg:col-span-7 flex flex-col justify-center space-y-8">
+            <div class="flex flex-wrap items-center gap-2 text-xs sm:text-sm font-medium text-teal-400">
+              <span>Double Board-Certified Cardiothoracic Surgeon</span>
+              <span class="text-slate-600">·</span>
+              <span class="text-slate-400">Harvard & MIT Trained</span>
+              <span class="text-slate-600">·</span>
+              <span class="text-slate-400">FACS, FACC</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.08]">
+              Minimally invasive cardiac precision. <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-teal-200 to-cyan-300">Preserving native valve geometry.</span>
+            </h1>
+            <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+              Specializing in endoscopic robotic mitral repair, off-pump total arterial bypass, and precision hemodynamic longevity. Providing unhurried surgical evaluations and global second opinions.
+            </p>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <button onclick="openBookingModal()" class="inline-flex items-center justify-center px-7 py-3.5 text-sm font-semibold text-slate-950 bg-teal-400 hover:bg-teal-300 rounded-xl shadow-[0_0_30px_rgba(45,212,191,0.35)] transition-all">
+                Schedule Consultation
+              </button>
+              <a href="#about" class="inline-flex items-center justify-center px-6 py-3.5 text-sm font-medium text-slate-200 hover:text-white glass-pill hover:bg-white/10 rounded-xl transition-colors">
+                View Surgical Credentials →
+              </a>
+            </div>
+            <div class="pt-4 border-t border-white/10 text-xs text-slate-400 flex flex-wrap items-center gap-x-6 gap-y-2">
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>Active Operating Privileges: Boston Surgical Pavilion</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
+                <span>Mass General Brigham Affiliate</span>
+              </div>
+            </div>
+          </div>
+          <!-- Doctor Portrait in Glass Frame -->
+          <div class="lg:col-span-5 relative">
+            <div class="glass-panel rounded-3xl p-3 sm:p-4 relative overflow-hidden group">
+              <!-- Quick tool to change photo directly on screen -->
+              <div class="absolute top-6 right-6 z-20">
+                <button
+                  onclick="openPhotoCustomizer()"
+                  class="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white bg-slate-900/80 hover:bg-teal-400 hover:text-slate-950 backdrop-blur-md rounded-xl border border-white/20 shadow-lg transition-all"
+                >
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                  <span>Change Photo</span>
+                </button>
+              </div>
+              <!-- Portrait Image container -->
+              <div class="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-slate-900 border border-white/10">
+                <img
+                  id="doctorHeroImg"
+                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop"
+                  alt="Dr. Julian Thorne, MD, PhD"
+                  class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+                <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-slate-950/95 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 p-3.5 glass-card rounded-xl border border-white/15">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h4 class="text-sm font-semibold text-white">Dr. Julian Thorne</h4>
+                      <p class="text-xs text-teal-300 font-mono">MD, PhD, FACS, FACC</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-[11px] text-slate-400">Chief Surgeon</p>
+                      <p class="text-xs text-slate-200 font-medium">Boston, MA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Quantitative Metrics Row -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div class="glass-card rounded-2xl p-5 border border-white/10">
+            <p class="text-3xl font-bold text-white tabular-nums">1,840<span class="text-teal-400">+</span></p>
+            <p class="text-xs text-slate-400 mt-1 font-medium">Complex Surgeries Completed</p>
+            <p class="text-[11px] text-slate-500 mt-0.5">Consecutive 18-year clinical log</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5 border border-white/10">
+            <p class="text-3xl font-bold text-teal-300 tabular-nums">99.4%</p>
+            <p class="text-xs text-slate-400 mt-1 font-medium">30-Day Procedure Survival</p>
+            <p class="text-[11px] text-slate-500 mt-0.5">Verified STS Registry Data</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5 border border-white/10">
+            <p class="text-3xl font-bold text-white tabular-nums">0.22%</p>
+            <p class="text-xs text-slate-400 mt-1 font-medium">30-Day Readmission Rate</p>
+            <p class="text-[11px] text-emerald-400 mt-0.5">National benchmark: 3.4%</p>
+          </div>
+          <div class="glass-card rounded-2xl p-5 border border-white/10">
+            <p class="text-3xl font-bold text-white tabular-nums">48</p>
+            <p class="text-xs text-slate-400 mt-1 font-medium">Peer-Reviewed Papers</p>
+            <p class="text-[11px] text-slate-500 mt-0.5">NEJM, Lancet, JACC, Circulation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION: BIO & CREDENTIALS -->
+    <section id="about" class="py-20 reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <p class="text-xs font-semibold uppercase tracking-wider text-teal-400 mb-2">Physician Profile & Credentials</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Academic rigor combined with precision microsurgical execution.</h2>
+          <p class="text-base text-slate-300 mt-4 leading-relaxed">
+            Dr. Julian Thorne combines over 18 years of high-acuity surgical execution with translational biomaterials research from MIT, focusing on valve repair over replacement, off-pump arterial revascularization, and cellular longevity interventions.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="glass-card rounded-2xl p-6 border border-white/10">
+            <div class="flex items-center justify-between text-xs text-teal-400 font-mono mb-2">
+              <span>2016 – Present</span>
+              <span class="text-slate-400">Boston, MA</span>
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-2">Chief of Cardiothoracic & Minimally Invasive Reconstruction</h3>
+            <p class="text-sm text-slate-300">Boston Surgical Pavilion & Heart Institute</p>
+          </div>
+          <div class="glass-card rounded-2xl p-6 border border-white/10">
+            <div class="flex items-center justify-between text-xs text-teal-400 font-mono mb-2">
+              <span>2012 – 2014</span>
+              <span class="text-slate-400">Oxford, UK</span>
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-2">Advanced Endovascular & Aortic Root Reconstruction Fellowship</h3>
+            <p class="text-sm text-slate-300">Oxford University Hospitals NHS Trust / John Radcliffe</p>
+          </div>
+          <div class="glass-card rounded-2xl p-6 border border-white/10">
+            <div class="flex items-center justify-between text-xs text-teal-400 font-mono mb-2">
+              <span>2007 – 2012</span>
+              <span class="text-slate-400">Boston, MA</span>
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-2">Cardiothoracic Surgery Residency & Chief Resident</h3>
+            <p class="text-sm text-slate-300">Massachusetts General Hospital & Harvard Medical School</p>
+          </div>
+          <div class="glass-card rounded-2xl p-6 border border-white/10">
+            <div class="flex items-center justify-between text-xs text-teal-400 font-mono mb-2">
+              <span>2001 – 2007</span>
+              <span class="text-slate-400">Cambridge, MA</span>
+            </div>
+            <h3 class="text-lg font-semibold text-white mb-2">Doctor of Philosophy (PhD) in Cellular Biomechanics</h3>
+            <p class="text-sm text-slate-300">Massachusetts Institute of Technology (MIT)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION: PROCEDURES GUIDE -->
+    <section id="procedures" class="py-20 bg-slate-900/30 reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <p class="text-xs font-semibold uppercase tracking-wider text-teal-400 mb-2">Surgical Specializations</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Minimally invasive mastery. Sub-millimeter anatomical precision.</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono text-teal-400 mb-2">
+                <span>01. ROBOTIC SURGERY</span>
+                <span class="text-slate-400">2.5 – 3.2 hours</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">Robotic Endoscopic Mitral Valve Repair</h3>
+              <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                Ultra-precision robotic micro-repair through 8mm lateral port incisions, eliminating median sternotomy and preserving native autologous valve geometry with a 99.8% repair rate.
+              </p>
+              <div class="text-xs text-slate-300 space-y-1.5 border-t border-white/10 pt-4">
+                <p>✓ Zero median sternotomy requirement</p>
+                <p>✓ No lifelong blood thinners necessary</p>
+                <p>✓ Return to full activity within 2–3 weeks</p>
+              </div>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/10 flex justify-end">
+              <button onclick="openBookingModal('Robotic Endoscopic Mitral Valve Repair')" class="px-5 py-2.5 text-xs font-semibold text-slate-950 bg-teal-400 hover:bg-teal-300 rounded-lg shadow-md transition-all">
+                Book for this Procedure
+              </button>
+            </div>
+          </div>
+          <div class="glass-card rounded-3xl p-6 sm:p-8 border border-white/10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono text-teal-400 mb-2">
+                <span>02. CARDIOVASCULAR</span>
+                <span class="text-slate-400">3.0 – 4.0 hours</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">Off-Pump Total Arterial Bypass (OPCAB)</h3>
+              <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                Beating-heart multi-vessel bypass using exclusively bilateral internal mammary and radial arteries without heart-lung machines, radically lowering stroke and systemic inflammation.
+              </p>
+              <div class="text-xs text-slate-300 space-y-1.5 border-t border-white/10 pt-4">
+                <p>✓ 78% lower perioperative stroke rate vs on-pump bypass</p>
+                <p>✓ Mean conduit patency of 96.4% at 10-year follow-up</p>
+                <p>✓ Minimized blood transfusion requirements</p>
+              </div>
+            </div>
+            <div class="mt-8 pt-4 border-t border-white/10 flex justify-end">
+              <button onclick="openBookingModal('Off-Pump Total Arterial Revascularization')" class="px-5 py-2.5 text-xs font-semibold text-slate-950 bg-teal-400 hover:bg-teal-300 rounded-lg shadow-md transition-all">
+                Book for this Procedure
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION: CLINICAL OUTCOMES -->
+    <section id="outcomes" class="py-20 reveal-on-scroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <p class="text-xs font-semibold uppercase tracking-wider text-teal-400 mb-2">Clinical Proof & Surgical Audits</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Empirical quality metrics compared against national benchmarks.</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="glass-card rounded-2xl p-6 border border-white/10">
+            <span class="text-xs font-mono text-teal-400 uppercase tracking-wider">Metric 01</span>
+            <h3 class
+
